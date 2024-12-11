@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Perú</title>
+    <link rel="shortcut icon" href="../Imagenes/imglogo/Logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/aventura.css">
+</head>
+<body>
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <a href="" class="logo">Explore Perú</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="./imag/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="aventura.html">Aventura</a></li>
+                        <li><a href="historia.html">Historia y Cultura</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 0);
+        })
+    </script>
+    <section class="slider-box">
+        <ul>
+            <li>
+                <img src="./aventura/caminoinca.jpg" alt="Camino Inca: Siguiendo los Pasos de los Ancestros">
+                <div class="texto">
+                    <h2>Camino Inca: Siguiendo los Pasos de los Ancestros</h2>
+                    <p>Embárcate en una travesía ancestral por los senderos incas que te llevarán a través de imponentes montañas, selvas nubladas y antiguas ruinas. ¡El Camino Inca no es solo una caminata, es una inmersión en la historia y el misticismo de los Andes, culminando en la mágica ciudadela de Machu Picchu!</p>
+                </div>
+            </li>
+            <li>
+                <img src="./aventura/laguna69.jpg" alt="Laguna 69: Un Espejo de los Andes">
+                <div class="texto">
+                    <h2>Laguna 69: Un Espejo de los Andes</h2>
+                    <p>Descubre uno de los secretos mejor guardados de Perú: la Laguna 69, una joya de agua turquesa que refleja las majestuosas montañas nevadas de la Cordillera Blanca. Esta es la aventura perfecta para los buscadores de paisajes de ensueño y emociones de altura.</p>
+                </div>
+            </li>
+            <li>
+                <img src="./aventura/surf.webp" alt="Surf en Máncora: Cabalgando las Olas del Pacífico">
+                <div class="texto">
+                    <h2>Surf en Máncora: Cabalgando las Olas del Pacífico</h2>
+                    <p>¿Alguna vez has sentido la libertad de cabalgar una ola perfecta? En Máncora, la meca del surf en Perú, el mar se convierte en tu parque de aventuras. Con olas que desafían tanto a principiantes como a surfistas experimentados, y un atardecer que pinta el cielo de colores intensos, este rincón del Pacífico es mucho más que un destino de playa: es un lugar donde el surf se convierte en estilo de vida.</p>
+                </div>
+            </li>
+            
+            <li>
+                <img src="./aventura/pastoruri.jpg" alt="Nevado Pastoruri: Explorando el Mundo de Hielo">
+                <div class="texto">
+                    <h2>Nevado Pastoruri: Explorando el Mundo de Hielo</h2>
+                    <p>Entra en un reino helado de imponentes glaciares y paisajes sobrenaturales. El Nevado Pastoruri, con sus formaciones de hielo y cumbres blancas, te llevará a un encuentro cercano con las alturas más frías y desafiantes de Perú. ¡Prepárate para una aventura gélida y épica!</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <main class="main-content">
+        <section class="featured-adventures" id="aventuras">
+            <h2>Aventuras Inolvidables</h2>
+            <div class="adventures-grid">
+                <div class="adventure-item">
+                    <img src="./aventura/rafting-cusco-1.jpg" alt="Rafting en el Río Urubamba">
+                    <h3>Rafting en el Río Urubamba</h3>
+                    <p>Siente la adrenalina mientras desciendes los rápidos del Valle Sagrado.</p>
+                    
+                </div>
+                <div class="adventure-item">
+                    <img src="./aventura/huacachina2.jpg" alt="Sandboarding en Huacachina">
+                    <h3>Sandboarding en Huacachina</h3>
+                    <p>Deslízate por las dunas de arena de Huacachina.</p>
+                   
+                </div>
+                <div class="adventure-item">
+                    <img src="./aventura/escalada_1.jpg" alt="Escalada en Roca">
+                    <h3>Escalada en Roca</h3>
+                    <p>Conquista las alturas en los acantilados más desafiantes de Perú.</p>
+                   
+                </div>
+                <div class="adventure-item">
+                    <img src="./aventura/parapente en lima.jpg" alt="Parapente en Lima">
+                    <h3>Parapente en Lima</h3>
+                    <p>Vuela sobre los acantilados de la Costa Verde en Lima.</p>
+                   
+                </div>
+            </div>
+    
+            <div class="pagination">
+                <button class="prev">« Anterior</button>
+                <span id="page-number">1</span>
+                <button class="next">Siguiente »</button>
+            </div>
+        </section>
+    </main>
+    <section class="experiencias">
+        <h2>Cada experiencia tiene una riqueza escondida. ¡Encuéntrala!</h2>
+        <input type="text" id="busqueda" placeholder="🔍 Ej. Comida, Baile, Parapente, Paracaidismo">
+        
+        <!-- Filtros -->
+        <div class="filtros">
+          <button class="filtro" data-categoria="aventura">Aventura</button>
+          <button class="filtro" data-categoria="entretenimiento">Entretenimiento</button>
+          <button class="filtro" data-categoria="exclusivo">Exclusivo</button>
+          <button class="filtro" data-categoria="gastronomia">Gastronomía</button>
+          <button class="filtro" data-categoria="historia">Histórico Cultural</button>
+          <button class="filtro" data-categoria="naturaleza">Naturaleza</button>
+          <button class="filtro" data-categoria="vivencial">Vivencial</button>
+          <button class="filtro" data-categoria="todos">Todos</button>
+        </div>
+        
+        
+        <button id="filtrar">FILTRAR</button>
+      
+        
+        <div class="tarjetas-experiencias">
+            
+            <div class="tarjeta" data-categoria="aventura">
+                <img src="./aventura/canotaje-.jpg" alt="Aventura">
+                <h3>Actividades náuticas en Piura</h3>
+                <p>Zambúllete en la aventura.</p>
+            </div>
+            <div class="tarjeta" data-categoria="aventura">
+                <img src="./aventura/huacachina2.jpg" alt="Aventura">
+                <h3>Sandboarding en Huacachina</h3>
+                <p>Deslízate por las dunas de arena.</p>
+            </div>
+            <div class="tarjeta" data-categoria="aventura">
+                <img src="./aventura/uruabamba1.jpg" alt="Aventura">
+                <h3>Rafting en el Río Urubamba</h3>
+                <p>Desciende los rápidos del Valle Sagrado.</p>
+            </div>
+            <div class="tarjeta" data-categoria="aventura">
+                <img src="./aventura/parapente en lima.jpg" alt="Aventura">
+                <h3>Parapente en Lima</h3>
+                <p>Vuela sobre la costa de Lima.</p>
+            </div>
+    
+            <!-- Entretenimiento -->
+            <div class="tarjeta" data-categoria="entretenimiento">
+                <img src="./imag/virgem.jpg" alt="Entretenimiento">
+                <h3>Fiestas culturales en Cusco</h3>
+                <p>Vive la magia del folklore peruano.</p>
+            </div>
+            <div class="tarjeta" data-categoria="entretenimiento">
+                <img src="./imag/diablada.jpg" alt="Entretenimiento">
+                <h3>Fiesta de la Candelaria</h3>
+                <p>Un evento cultural único en Puno.</p>
+            </div>
+            <div class="tarjeta" data-categoria="entretenimiento">
+                <img src="./imag/images.jpg" alt="Entretenimiento">
+                <h3>Danza de Tijeras en Ayacucho</h3>
+                <p>Una muestra vibrante de tradición.</p>
+            </div>
+            <div class="tarjeta" data-categoria="entretenimiento">
+                <img src="./imag/car.jpg" alt="Entretenimiento">
+                <h3>Carnaval de Cusco</h3>
+                <p>La celebración de la cultura incaica.</p>
+            </div>
+    
+            <!-- Gastronomía -->
+            <div class="tarjeta" data-categoria="gastronomia">
+                <img src="./imag/cost.jpg" alt="Gastronomía">
+                <h3>Sabores de la Costa</h3>
+                <p>Descubre la sazón única de Perú.</p>
+            </div>
+            <div class="tarjeta" data-categoria="gastronomia">
+                <img src="./imag/sierr.jpg" alt="Gastronomía">
+                <h3>Gastronomía Andina</h3>
+                <p>Platos tradicionales del altiplano.</p>
+            </div>
+            <div class="tarjeta" data-categoria="gastronomia">
+                <img src="./imag/selv.avif" alt="Gastronomía">
+                <h3>Sabores de la Amazonía</h3>
+                <p>Deléitate con los sabores exóticos de la selva.</p>
+            </div>
+            <div class="tarjeta" data-categoria="gastronomia">
+                <img src="./imag/ceviche.jpg" alt="Gastronomía">
+                <h3>Ceviche Peruano</h3>
+                <p>El ceviche más fresco del mundo.</p>
+            </div>
+    
+            <!-- Historia -->
+            <div class="tarjeta" data-categoria="historia">
+                <img src="./imag/cuszco_2.jpg" alt="Historia">
+                <h3>Descubre la magia de Machu Picchu</h3>
+                <p>Un viaje al pasado de la civilización Inca.</p>
+            </div>
+            <div class="tarjeta" data-categoria="historia">
+                <img src="./imag/ini.webp" alt="Historia">
+                <h3>Camino Inca</h3>
+                <p>Recorre el antiguo camino de los incas.</p>
+            </div>
+            <div class="tarjeta" data-categoria="historia">
+                <img src="./rimagenes/cusco.jpg" alt="Historia">
+                <h3>Sacsayhuamán</h3>
+                <p>Conoce el misterioso complejo arqueológico de Cusco.</p>
+            </div>
+            <div class="tarjeta" data-categoria="historia">
+                <img src="./imag/caral.jpg" alt="Historia">
+                <h3>Ciudad Sagrada de Caral</h3>
+                <p>La cuna de la civilización más antigua de América.</p>
+            </div>
+    
+            <!-- Agregar más categorías según sea necesario -->
+        </div>
+      </section>
+      <script src="./js/filtro.js"></script>
+      
+    <footer class="custom-footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Trujillo, Perú</li>
+                        <li>Teléfono: +51 926-767-789</li>
+                        <li>Email: contacto@exploreperu.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook"> <i class="fa-brands fa-facebook-f"></i> </span>
+                        <span class="twitter"> <i class="fa-brands fa-twitter"></i> </span>
+                        <span class="youtube"> <i class="fa-brands fa-youtube"></i> </span>
+                        <span class="instagram"><i class="fa-brands fa-instagram"></i> </span>
+                    </div>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información de Destinos</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="my-account">
+                    <p class="title-footer">Explora Más</p>
+                    <ul>
+                        <li><a href="#">Mi Cuenta</a></li>
+                        <li><a href="#">Historial de Reservas</a></li>
+                        <li><a href="#">Destinos Favoritos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Soporte y Rembolsos</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <p class="title-footer">Boletín Informativo</p>
+                    <div class="content">
+                        <p>Suscríbete para recibir novedades sobre nuestros destinos turísticos y ofertas especiales.</p>
+                        <input type="email" placeholder="Ingresa tu correo aquí...">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Desarrollado por Explore Perú &copy; 2024</p>
+                <img src="./imag/payment.png" alt="Métodos de Pago">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

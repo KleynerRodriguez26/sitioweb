@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Perú</title>
+    <link rel="shortcut icon" href="./imag/Logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./css/destinos.css">
+</head>
+
+<body>
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <a href="" class="logo">Explore Perú</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="./imag/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="aventura.html">Aventura</a></li>
+                        <li><a href="historia.html">Historia y Cultura</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="slider-box">
+        <ul>
+            <li>
+                <img src="./imag/marinera.jpg" alt="Marinera">
+                <div class="texto">
+                    <h2>Marinera: El Baile del Amor</h2>
+                    <p>La marinera es una danza elegante y romántica que simboliza el cortejo entre hombres y
+                        mujeres.
+                        Esta danza, con sus suaves movimientos y pañuelos ondeantes, refleja la esencia del amor y
+                        la
+                        alegría peruana.</p>
+                </div>
+            </li>
+            <li>
+                <img src="./imag/ceviche.jpg" alt="Ceviche">
+                <div class="texto">
+                    <h2>Ceviche: Un Arte Culinario</h2>
+                    <p>Considerado el plato nacional, el ceviche es más que una simple comida; es un símbolo de la
+                        gastronomía peruana. Preparado con pescado fresco, jugo de limón y especias, es un manjar
+                        que
+                        une a las familias en celebraciones y festividades.</p>
+                </div>
+            </li>
+            <li>
+                <img src="./imag/señor-milagros.jpg" alt="Festejo del Señor de los Milagros">
+                <div class="texto">
+                    <h2>Festejo del Señor de los Milagros: Devoción y Tradición</h2>
+                    <p>En octubre, Lima se viste de morado para rendir homenaje al Señor de los Milagros. Este
+                        evento,
+                        que combina fe y cultura, incluye procesiones y ceremonias que reúnen a miles de devotos en
+                        una
+                        muestra de fervor religioso y unidad.</p>
+                </div>
+            </li>
+            <li>
+                <img src="./imag/pachamama.jpg" alt="Rituales de la Pachamama">
+                <div class="texto">
+                    <h2>Rituales de la Pachamama: Honrando a la Madre Tierra</h2>
+                    <p>En agosto, las comunidades andinas celebran a la Pachamama, ofreciendo alimentos y bebidas en
+                        rituales que expresan gratitud por la tierra y sus frutos. Estas tradiciones ancestrales
+                        fortalecen la conexión entre el hombre y la naturaleza.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 0);
+        })
+    </script>
+    <section id="destinos">
+        <h2>Destinos Populares</h2>
+        <div class="filtros">
+          <button class="filtro-btn" data-region="todos">Todos</button>
+          <button class="filtro-btn" data-region="costa">Costa</button>
+          <button class="filtro-btn" data-region="sierra">Sierra</button>
+          <button class="filtro-btn" data-region="selva">Selva</button>
+        </div>
+        <div class="grid-destinos">
+          <!-- Costa -->
+          <div class="destino-card costa">
+            <div class="destino-img">
+              <img src="./rimagenes/piura.jpeg" alt="Piura" />
+            </div>
+            <h3>Piura</h3>
+            <p>Playas hermosas como Máncora y una deliciosa gastronomía.</p>
+          </div>
+          <div class="destino-card costa">
+            <div class="destino-img">
+              <img src="./rimagenes/lima.jpg" alt="Lima" />
+            </div>
+            <h3>Lima</h3>
+            <p>La capital del Perú, conocida por su historia y cocina mundialmente famosa.</p>
+          </div>
+          <div class="destino-card costa">
+            <div class="destino-img">
+              <img src="./rimagenes/Ica.jpg" alt="Ica" />
+            </div>
+            <h3>Ica</h3>
+            <p>Hogar del oasis de Huacachina y las famosas líneas de Nazca.</p>
+          </div>
+          <div class="destino-card costa">
+            <div class="destino-img">
+              <img src="./rimagenes/la-libertad.jpg" alt="Trujillo" />
+            </div>
+            <h3>Trujillo</h3>
+            <p>La Ciudad de la Eterna Primavera, rica en cultura y arqueología.</p>
+          </div>
+          <div class="destino-card costa">
+            <div class="destino-img">
+              <img src="./rimagenes/tumbes.jpg" alt="Tumbes" />
+            </div>
+            <h3>Tumbes</h3>
+            <p>Puerta de entrada al norte peruano, famosa por sus manglares y playas.</p>
+          </div>
+          <div class="destino-card costa">
+            <div class="destino-img">
+              <img src="./rimagenes/arequipa.jpg" alt="Arequipa" />
+            </div>
+            <h3>Arequipa</h3>
+            <p>Conocida como la Ciudad Blanca, rodeada por volcanes y belleza natural.</p>
+          </div>
+          <!-- Sierra -->
+          <div class="destino-card sierra">
+            <div class="destino-img">
+              <img src="./rimagenes/cusco.jpg" alt="Cusco" />
+            </div>
+            <h3>Cusco</h3>
+            <p>Antigua capital del Imperio Inca y hogar de Machu Picchu.</p>
+          </div>
+          <div class="destino-card sierra">
+            <div class="destino-img">
+              <img src="./rimagenes/huancavelica.jpg" alt="Huancayo" />
+            </div>
+            <h3>Huancavelica</h3>
+            <p>Conocida como la Incontrastable, llena de cultura y artesanía.</p>
+          </div>
+          <div class="destino-card sierra">
+            <div class="destino-img">
+              <img src="./rimagenes/ayacucho.jpg" alt="Ayacucho" />
+            </div>
+            <h3>Ayacucho</h3>
+            <p>Famosa por sus iglesias coloniales y festividades religiosas.</p>
+          </div>
+          <div class="destino-card sierra">
+            <div class="destino-img">
+              <img src="./rimagenes/arequipa.jpg" alt="Arequipa" />
+            </div>
+            <h3>Arequipa (Sierra)</h3>
+            <p>Rodeada de volcanes y paisajes andinos, destacada por su gastronomía.</p>
+          </div>
+          <div class="destino-card sierra">
+            <div class="destino-img">
+              <img src="./rimagenes/puno.webp" alt="Puno" />
+            </div>
+            <h3>Puno</h3>
+            <p>Hogar del Lago Titicaca, el lago navegable más alto del mundo.</p>
+          </div>
+          <div class="destino-card sierra">
+            <div class="destino-img">
+              <img src="./rimagenes/ancash.jpg" alt="Huaraz" />
+            </div>
+            <h3>Huaraz</h3>
+            <p>Capital del andinismo, rodeada de montañas y paisajes glaciares.</p>
+          </div>
+          
+          <!-- Selva -->
+          <div class="destino-card selva">
+            <div class="destino-img">
+              <img src="./rimagenes/loreto.jpg" alt="Iquitos" />
+            </div>
+            <h3>Iquitos</h3>
+            <p>La capital de la Amazonía peruana, rodeada por el majestuoso río Amazonas.</p>
+          </div>
+          <div class="destino-card selva">
+            <div class="destino-img">
+              <img src="./rimagenes/madre-de-dios.jpg" alt="Pucallpa" />
+            </div>
+            <h3>Pucallpa</h3>
+            <p>Ciudad vibrante con acceso a la naturaleza y tradiciones amazónicas.</p>
+          </div>
+          <div class="destino-card selva">
+            <div class="destino-img">
+              <img src="./imag/amazo_1.jpg" alt="Tarapoto" />
+            </div>
+            <h3>Tarapoto</h3>
+            <p>Conocida como la ciudad de las palmeras, llena de cascadas y biodiversidad.</p>
+          </div>
+          <div class="destino-card selva">
+            <div class="destino-img">
+              <img src="./rimagenes/madre-de-dios.jpg" alt="Madre de Dios" />
+            </div>
+            <h3>Madre de Dios</h3>
+            <p>Puerta de entrada a la Reserva Nacional Tambopata y rica vida silvestre.</p>
+          </div>
+          <div class="destino-card selva">
+            <div class="destino-img">
+              <img src="./rimagenes/san-martin.jpg" alt="Moyobamba" />
+            </div>
+            <h3>Moyobamba</h3>
+            <p>Conocida como la ciudad de las orquídeas, rodeada de selva y belleza natural.</p>
+          </div>
+          <div class="destino-card selva">
+            <div class="destino-img">
+              <img src="./rimagenes/ucayali.jpg" alt="Ucayali" />
+            </div>
+            <h3>Ucayali</h3>
+            <p>Río, naturaleza y una conexión única con la Amazonía peruana.</p>
+          </div>
+          
+        </div>
+      </section>
+      <script src="./js/destinos.js"></script>
+
+      <section class="peru-en-el-mundo">
+        <div class="info">
+            <h1>Perú en el mundo</h1>
+            <p>Maravíllate con la diversidad de nuestra riqueza natural, cultural e histórica.</p>
+            <button onclick="window.location.href='#'">ACERCA DEL PERÚ</button>
+        </div>
+        <div id="map"></div>
+    </section>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/java.js"></script>
+    
+    <section class="noticias-destacadas">
+      <h2>Noticias Destacadas</h2>
+      <div class="tarjetas">
+          <div class="tarjeta">
+              <img src="./imag/BN_280x242_perú_elegido 1.jpg" alt="Noticia 1">
+              <h3>Perú fue elegido 'Mejor Destino Culinario de América Latina'</h3>
+              <p>La gastronomía peruana continúa ganando prestigio a nivel mundial...</p>
+              <button class="btn-leer-mas" 
+                      data-title="Perú fue elegido 'Mejor Destino Culinario'" 
+                      data-text="La gastronomía peruana ha sido reconocida por su diversidad y sabor único." 
+                      data-img="./imag/BN_280x242_perú_elegido 1.jpg">Leer más</button>
+          </div>
+          <div class="tarjeta">
+              <img src="./imag/BN_280x242_cultura_mochica.jpg" alt="Noticia 2">
+              <h3>Descubrimiento en Pañamarca: murales revelan el poder femenino</h3>
+              <p>Un nuevo hallazgo en el Sitio Arqueológico de Pañamarca...</p>
+              <button class="btn-leer-mas" 
+                      data-title="Descubrimiento en Pañamarca" 
+                      data-text="Un mural increíble revela historias del poder femenino en culturas antiguas." 
+                      data-img="./imag/BN_280x242_cultura_mochica.jpg">Leer más</button>
+          </div>
+          <div class="tarjeta">
+              <img src="./imag/BN_280x242_perutravel_elegido.jpg" alt="Noticia 3">
+              <h3>Peru.travel es elegida como la Mejor Web de Turismo de América Latina</h3>
+              <p>El portal oficial de turismo del Perú, Peru.travel, ha sido reconocido...</p>
+              <button class="btn-leer-mas" 
+                      data-title="Peru.travel es elegida como la Mejor Web de Turismo" 
+                      data-text="El portal oficial Peru.travel ha sido premiado por su excelencia." 
+                      data-img="./imag/BN_280x242_perutravel_elegido.jpg">Leer más</button>
+          </div>
+          <div class="tarjeta">
+              <img src="./imag/BN_280x242_Peru_World_travel.jpg" alt="Noticia 4">
+              <h3>Perú destaca en tres importantes categorías de los World Travel Awards</h3>
+              <p>El legado ancestral, cultural e increíbles atractivos turísticos de Perú...</p>
+              <button class="btn-leer-mas" 
+                      data-title="Perú en los World Travel Awards" 
+                      data-text="Perú recibe reconocimiento mundial en importantes categorías de turismo." 
+                      data-img="./imag/BN_280x242_Peru_World_travel.jpg">Leer más</button>
+          </div>
+      </div>
+      <!-- Modal -->
+      <div id="modal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img id="modal-img" src="" alt="Imagen de la noticia">
+              <h3 id="modal-title"></h3>
+              <p id="modal-text"></p>
+          </div>
+      </div>
+      
+  </section>
+  <script src="./js/noticias.js"></script>
+  
+      
+
+
+
+
+    <footer class="custom-footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Trujillo, Perú</li>
+                        <li>Teléfono: +51 926-767-789</li>
+                        <li>Email: contacto@exploreperu.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook"> <i class="fa-brands fa-facebook-f"></i> </span>
+                        <span class="twitter"> <i class="fa-brands fa-twitter"></i> </span>
+                        <span class="youtube"> <i class="fa-brands fa-youtube"></i> </span>
+                        <span class="instagram"><i class="fa-brands fa-instagram"></i> </span>
+                    </div>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información de Destinos</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="my-account">
+                    <p class="title-footer">Explora Más</p>
+                    <ul>
+                        <li><a href="#">Mi Cuenta</a></li>
+                        <li><a href="#">Historial de Reservas</a></li>
+                        <li><a href="#">Destinos Favoritos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Soporte y Rembolsos</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <p class="title-footer">Boletín Informativo</p>
+                    <div class="content">
+                        <p>Suscríbete para recibir novedades sobre nuestros destinos turísticos y ofertas
+                            especiales.</p>
+                        <input type="email" placeholder="Ingresa tu correo aquí...">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Desarrollado por Explore Perú &copy; 2024</p>
+                <img src="./imag/payment.png" alt="Métodos de Pago">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

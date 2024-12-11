@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./imag/Logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Explore Perú</title>
+</head>
+
+<body>
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <a href="" class="logo">Explore Perú</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="./imag/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="aventura.html">Aventura</a></li>
+                        <li><a href="historia.html">Historia y Cultura</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="slider-box">
+        <ul>
+            <li>
+                <img src="./imag/plaza de armas arequipa.jpg" alt="">
+                <div class="texto">
+                    <h2>La Ciudad Blanca</h2>
+                    <p>La Catedral de Arequipa, construida con sillar (piedra volcánica blanca), es un ícono de la
+                        ciudad. Su impresionante arquitectura neoclásica, ubicada en la Plaza de Armas, refleja el apodo
+                        de Arequipa como "La Ciudad Blanca" y es parte del Patrimonio de la Humanidad de la UNESCO</p>
+                </div>
+            </li>
+            <li>
+                <img src="./imag/Inicio1.jpg" alt="">
+                <div class="texto">
+                    <h2>Machu Picchu: La Ciudad Perdida de los Incas que Desafía el Tiempo y la Gravedad</h2>
+                    <p>Machu Picchu, la icónica ciudadela inca, fue construida en el siglo XV y es famosa por su
+                        impresionante arquitectura de piedra, perfectamente integrada en las montañas. Ubicada a más de
+                        2,400 metros sobre el nivel del mar, es considerada una de las Siete Maravillas del Mundo
+                        Moderno y también forma parte del Patrimonio de la Humanidad de la UNESCO.</p>
+                </div>
+            </li>
+            <li>
+                <img src="./imag/inicio2.jpg" alt="">
+                <div class="texto">
+                    <h2>El Templo del Sol: El Santuario Inca que Honraba al Astro Rey</h2>
+                    <p> Su diseño semicircular y su alineación perfecta permiten que, durante el solsticio de invierno,
+                        los primeros rayos del sol iluminen directamente su altar, simbolizando la conexión espiritual
+                        entre el Inca y el cosmos. Este templo no solo era un centro de observación astronómica, sino
+                        también un sitio de ceremonias religiosas clave en la veneración del sol, fuente de vida para la
+                        cultura inca.</p>
+                </div>
+            </li>
+            <li>
+                <img src="./imag/inicio3.jpg" alt="">
+                <div class="texto">
+                    <h2>El Amazonas: El Corazón Verde del Planeta</h2>
+                    <p>La selva amazónica, la mayor selva tropical del mundo, abarca más de 5.5 millones de kilómetros
+                        cuadrados en varios países de Sudamérica. Es un biodiversidad extraordinaria, hogar de
+                        aproximadamente el 10% de las especies conocidas en el planeta, incluyendo miles de plantas,
+                        animales y microorganismos. Además de su valor ecológico, el Amazonas es vital para la
+                        regulación del clima global, produciendo alrededor del 20% del oxígeno de la Tierra.</p>
+                </div>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo", window.scrollY > 0);
+            })
+        </script>
+    </section>
+    <main class="tours container">
+        <h2>Bienvenido </h2>
+        <p>
+            Descubre la esencia de Perú a través de sus principales destinos turísticos como Machu Picchu y Cusco.
+            Sumérgete en experiencias inolvidables que conectan con la naturaleza y la aventura. Inspírate con frases
+            que invitan a explorar y aprende datos fascinantes sobre la diversidad cultural del país. ¡Explora, sueña y
+            vive Perú!
+        </p>
+        <div class="tour-content">
+            <div class="tour-1">
+                <div class="tour-txt">
+                    <h3>Historia</h3>
+                    <p>Explora los eventos que han dado forma a Perú a lo largo de los siglos.</p>
+                </div>
+            </div>
+            <div class="tour-2">
+                <div class="tour-txt">
+                    <h3>Naturalza</h3>
+                    <p>Admira la diversidad natural que hace de Perú un paraíso ecológico.</p>
+                </div>
+            </div>
+            <div class="tour-3">
+                <div class="tour-txt">
+                    <h3>Costumbres</h3>
+                    <p>Conoce las costumbres que reflejan la riqueza cultural de Perú.</p>
+                </div>
+            </div>
+            <div class="tour-4">
+                <div class="tour-txt">
+                    <h3>Geografía</h3>
+                    <p>Descubre la diversidad geográfica que hace único a Perú.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="video">
+        <div class="video-content container">
+            <div class="video-1">
+                <h2>Descubre  a través de nuestros videos</h2>
+                <p>Sumérgete en las maravillas de Perú con estas impresionantes visualizaciones .</p>
+                
+            </div>
+            <div class="video-2">
+                <video class="v1" controls>
+                    <source src="./videos/Contigo Perú - Marca Perú (1080p, h264, youtube).mp4" type="video/mp4">
+                </video>
+                <video class="v2" controls>
+                    <source src="./videos/Reel Presentación Film In Peru - Marca Perú (1080p, h264, youtube).mp4" type="video/mp4">
+
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="culture-section">
+        <h2>Descubre la Cultura y Costumbres de Perú</h2>
+        <p>Conoce las tradiciones y prácticas que hacen de Perú un país único. Sumérgete en sus festividades, gastronomía, y estilos de vida.</p>
+        
+        <div class="culture-gallery">
+            <div class="culture-item">
+                <img src="./imag/virgem.jpg " alt="Fiesta de la Virgen de la Candelaria">
+                <h3>Fiesta de la Virgen de la Candelaria</h3>
+                <p>Una de las festividades religiosas más importantes del país.</p>
+                <span class="favorite"><i class="fa-heart"></i></span>
+            </div>
+    
+            <div class="culture-item">
+                <img src="./imag/diablada.jpg" alt="Danza de la Diablada">
+                <h3>Danza de la Diablada</h3>
+                <p>Una danza tradicional que representa la lucha entre el bien y el mal.</p>
+                <span class="favorite"><i class="fa-heart"></i></span>
+            </div>
+    
+            <div class="culture-item">
+                <img src="./imag/gastronomia.jpg" alt="Gastronomía Peruana">
+                <h3>Gastronomía Peruana</h3>
+                <p>La cocina peruana es famosa por su fusión de sabores únicos y diversidad.</p>
+                <span class="favorite"><i class="fa-heart"></i></span>
+            </div>
+    
+            <div class="culture-item">
+                <img src="./imag/carnaval.jpg" alt="Carnaval de Cajamarca">
+                <h3>Carnaval de Cajamarca</h3>
+                <p>Una celebración vibrante llena de color, música y tradiciones.</p>
+                <span class="favorite"><i class="fa-heart"></i></span>
+            </div>
+    
+            <div class="culture-item">
+                <img src="./imag/tejidos.jpg" alt="Tejidos Andinos">
+                <h3>Tejidos Andinos</h3>
+                <p>Artesanías tradicionales que cuentan historias a través de sus colores y patrones.</p>
+                <span class="favorite"><i class="fa-heart"></i></span>
+            </div>
+           
+            <div class="culture-item">
+                <img src="./imag/ini.webp" alt="Inti Raymi">
+                <h3>Inti Raymi</h3>
+                <p>Una de las festividades más importantes del calendario incaico, que honra al dios Sol y se celebra cada año en Cusco.</p>
+                <span class="favorite"><i class="fa-heart"></i></span>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.favorite').forEach(function(favorite) {
+            favorite.addEventListener('click', function() {
+                favorite.classList.toggle('liked');
+            });
+        });
+    </script>
+    <section class="faq-section">
+        <h2>¿Cuánto conoces sobre Perú?</h2>
+        <p>Haz clic en las preguntas para descubrir más sobre nuestras costumbres, fiestas y lugares turísticos.</p>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button">¿Conoces el Carnaval de Cajamarca?</button>
+                <div class="accordion-content">
+                    <p>El Carnaval de Cajamarca es una de las festividades más importantes del Perú, celebrada con música, danzas y coloridos desfiles.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">¿Sabías que Machu Picchu es una de las 7 maravillas del mundo moderno?</button>
+                <div class="accordion-content">
+                    <p>Así es, Machu Picchu fue declarado como una de las 7 maravillas del mundo moderno en 2007. ¡Una maravilla arquitectónica y cultural!</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">¿Has probado la gastronomía peruana?</button>
+                <div class="accordion-content">
+                    <p>La cocina peruana es reconocida mundialmente. Platos como el ceviche, la causa, y el lomo saltado son imperdibles.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">¿Sabías que el Inti Raymi se celebra cada año en Cusco?</button>
+                <div class="accordion-content">
+                    <p>El Inti Raymi es una de las celebraciones más importantes de la cultura inca, dedicada al dios Sol, y se celebra cada 24 de junio en Cusco.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const content = button.nextElementSibling;
+
+                
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    content.style.maxHeight = null; 
+                } else {
+                    
+                    document.querySelectorAll('.accordion-item').forEach(el => {
+                        el.classList.remove('active');
+                        el.querySelector('.accordion-content').style.maxHeight = null;
+                    });
+
+                   
+                    item.classList.add('active');
+                    content.style.maxHeight = content.scrollHeight + 'px'; 
+                }
+            });
+        });
+    </script>
+    <footer class="custom-footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Trujillo, Perú</li>
+                        <li>Teléfono: +51 926-767-789</li>
+                        <li>Email: contacto@exploreperu.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook"> <i class="fa-brands fa-facebook-f"></i> </span>
+                        <span class="twitter"> <i class="fa-brands fa-twitter"></i> </span>
+                        <span class="youtube"> <i class="fa-brands fa-youtube"></i> </span>
+                        <span class="instagram"><i class="fa-brands fa-instagram"></i> </span>
+                    </div>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información de Destinos</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="my-account">
+                    <p class="title-footer">Explora Más</p>
+                    <ul>
+                        <li><a href="#">Mi Cuenta</a></li>
+                        <li><a href="#">Historial de Reservas</a></li>
+                        <li><a href="#">Destinos Favoritos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Soporte y Rembolsos</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <p class="title-footer">Boletín Informativo</p>
+                    <div class="content">
+                        <p>Suscríbete para recibir novedades sobre nuestros destinos turísticos y ofertas especiales.</p>
+                        <input type="email" placeholder="Ingresa tu correo aquí...">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Desarrollado por Explore Perú &copy; 2024</p>
+                <img src="./imag/payment.png" alt="Métodos de Pago">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
